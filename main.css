@@ -5,6 +5,7 @@
 body {
     background: #F3F1FF;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 main {
@@ -35,6 +36,53 @@ span {
 hr {
     border: 1px solid rgba(209, 209, 209, 1);
     margin-bottom: 30px;
+}
+
+
+/*----------------------
+    Nav Bar Section 
+ -------------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(86, 46, 255, 1);
+    margin-bottom: 36px;
+    height: 94px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: 60px;
+    margin-left: 470px;
+    margin-top: 10px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 500px;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.right-nav {
+    margin-right: 290px;
+}
+
+.right-nav a {
+    margin-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.right-nav img {
+    margin-top: 16px;
 }
 
 
@@ -155,6 +203,11 @@ hr {
     color: rgba(162, 162, 162, 1);
     ;
 }
+
+
+/*----------------------
+     Media Query Section 
+ -------------------------*/
 
 @media screen and (max-width: 688px) {
     .container {
