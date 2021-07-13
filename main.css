@@ -45,33 +45,44 @@ hr {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     background-color: rgba(86, 46, 255, 1);
     margin-bottom: 36px;
     height: 94px;
+    justify-content: space-between;
 }
 
 .navbar a {
     color: white;
 }
 
+.left-logo {
+    margin-left: 260px;
+}
+
 .logo {
     width: 50px;
     height: 60px;
-    margin-left: 470px;
-    margin-top: 10px;
 }
 
 .name {
     font-size: 24px;
     font-weight: 500px;
     text-decoration: none;
-    margin-top: 0px;
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 
 .right-nav {
     margin-right: 290px;
+}
+
+.right-nav ul {
+    list-style: none;
+}
+
+.right-nav li {
+    display: inline;
 }
 
 .right-nav a {
@@ -79,6 +90,7 @@ hr {
     font-size: 20px;
     text-decoration: none;
     font-weight: lighter;
+    margin-bottom: 20px;
 }
 
 .right-nav img {
@@ -201,7 +213,6 @@ hr {
 
 .course-rating .rating {
     color: rgba(162, 162, 162, 1);
-    ;
 }
 
 
@@ -228,6 +239,43 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 5%;
     }
+    nav {
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 94px;
+        width: 100%;
+    }
+    .left-logo {
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    .logo {
+        width: 20px;
+        height: 30px;
+    }
+    .name {
+        font-size: 20px;
+        font-weight: 500px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .right-nav {
+        margin-right: 2px;
+    }
+    .right-nav a {
+        margin-right: 5px;
+    }
+    .right-nav li {
+        display: inline;
+    }
+    .right-nav img {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (min-width: 688px) and (max-width: 992px) {
@@ -248,5 +296,42 @@ hr {
     .courses {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 5%;
+    }
+    nav {
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 94px;
+        width: 100%;
+    }
+    .left-logo {
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    .logo {
+        width: 40px;
+        height: 50px;
+    }
+    .name {
+        font-size: 20px;
+        font-weight: 500px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+    .right-nav {
+        margin-right: 2px;
+    }
+    .right-nav a {
+        margin-right: 25px;
+    }
+    .right-nav li {
+        display: inline;
+    }
+    .right-nav img {
+        margin-right: 10px;
+        margin-top: 10px;
     }
 }
