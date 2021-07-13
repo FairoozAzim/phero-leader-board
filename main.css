@@ -47,9 +47,11 @@ hr {
     display: flex;
     align-items: center;
     background-color: rgba(86, 46, 255, 1);
-    margin-bottom: 36px;
     height: 94px;
     justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .navbar a {
@@ -57,7 +59,7 @@ hr {
 }
 
 .left-logo {
-    margin-left: 260px;
+    margin-left: 10%;
 }
 
 .logo {
@@ -70,31 +72,40 @@ hr {
     font-weight: 500px;
     text-decoration: none;
     margin-left: 10px;
-    margin-bottom: 20px;
 }
 
-.right-nav {
-    margin-right: 290px;
-}
-
-.right-nav ul {
+nav ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.right-nav li {
-    display: inline;
+nav ul li {
+    margin: 0 5px;
 }
 
-.right-nav a {
+nav ul li a {
     margin-right: 50px;
     font-size: 20px;
     text-decoration: none;
     font-weight: lighter;
-    margin-bottom: 20px;
+    padding: 8px 15px;
 }
 
-.right-nav img {
-    margin-top: 16px;
+nav ul li img {
+    margin-right: 150px;
+}
+
+.menu-btn {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 
@@ -239,42 +250,57 @@ hr {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 5%;
     }
-    nav {
+    .navbar .menu-btn {
+        display: block;
+    }
+    .navbar .menu-btn i {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -200%;
+        height: 50vh;
         width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        background-color: rgba(86, 46, 255, 1);
     }
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 94px;
+    #click:checked~ul {
+        left: 0;
+    }
+    nav ul li {
         width: 100%;
+        margin: 40px 0;
     }
-    .left-logo {
-        margin-left: 20px;
-        margin-top: 25px;
-    }
-    .logo {
-        width: 20px;
-        height: 30px;
-    }
-    .name {
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
         font-size: 20px;
-        font-weight: 500px;
-        text-decoration: none;
-        margin-top: 20px;
+        text-align: center;
     }
-    .right-nav {
-        margin-right: 2px;
+    #click:checked~ul li a {
+        margin-left: 0px;
     }
-    .right-nav a {
-        margin-right: 5px;
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
     }
-    .right-nav li {
-        display: inline;
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: -1;
+        width: 100%;
+        padding: 0 30px;
     }
-    .right-nav img {
-        margin-right: 10px;
-        margin-top: 10px;
+    .content div {
+        font-size: 40px;
+        font-weight: 700;
     }
 }
 
@@ -297,41 +323,56 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 5%;
     }
-    nav {
+    .navbar .menu-btn {
+        display: block;
+    }
+    .navbar .menu-btn i {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -200%;
+        height: 50vh;
         width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        background-color: rgba(86, 46, 255, 1);
     }
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 94px;
+    #click:checked~ul {
+        left: 0;
+    }
+    nav ul li {
         width: 100%;
+        margin: 40px 0;
     }
-    .left-logo {
-        margin-left: 20px;
-        margin-top: 25px;
-    }
-    .logo {
-        width: 40px;
-        height: 50px;
-    }
-    .name {
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
         font-size: 20px;
-        font-weight: 500px;
-        text-decoration: none;
-        margin-top: 20px;
+        text-align: center;
     }
-    .right-nav {
-        margin-right: 2px;
+    #click:checked~ul li a {
+        margin-left: 0px;
     }
-    .right-nav a {
-        margin-right: 25px;
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
     }
-    .right-nav li {
-        display: inline;
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: -1;
+        width: 100%;
+        padding: 0 30px;
     }
-    .right-nav img {
-        margin-right: 10px;
-        margin-top: 10px;
+    .content div {
+        font-size: 40px;
+        font-weight: 700;
     }
 }
