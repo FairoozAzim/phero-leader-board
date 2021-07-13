@@ -250,6 +250,9 @@ input[type="checkbox"] {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 5%;
     }
+    .navbar .logo {
+        margin-left: 2%;
+    }
     .navbar .menu-btn {
         display: block;
     }
@@ -259,7 +262,7 @@ input[type="checkbox"] {
     nav ul {
         position: fixed;
         top: 80px;
-        left: -200%;
+        left: -110%;
         height: 50vh;
         width: 100%;
         text-align: center;
@@ -276,7 +279,7 @@ input[type="checkbox"] {
     }
     nav ul li a {
         width: 100%;
-        margin-left: -100%;
+        margin-left: 0%;
         display: block;
         font-size: 20px;
         text-align: center;
